@@ -3,7 +3,7 @@ name: ProAssistant Build
 on:
   push:
     branches:
-      - master
+      - dev
 
 jobs:
   build:
@@ -19,6 +19,8 @@ jobs:
 
       - name: Set up JDK
         uses: actions/setup-java@v2
+        with:
+          java-version: ${{ matrix.java-version }}
 
       - name: Build with Maven
         run: mvn clean package
