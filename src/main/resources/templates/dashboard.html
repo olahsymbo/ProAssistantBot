@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h2>Welcome to the Dashboard</h2>
+  <p>Hello, <span id="username"></span>! You are logged in.</p>
+  <a href="/logout">Logout</a>
+</div>
+
+<script>
+        // You can use JavaScript to dynamically insert the username here
+        var user = JSON.parse(localStorage.getItem('user'));
+        document.getElementById('username').innerText = user.username;
+    </script>
+</body>
+</html>
