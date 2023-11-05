@@ -13,7 +13,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Users registerUser(Users users) {
-        // Add validation logic (e.g., check if username is unique)
         return userRepository.save(users);
     }
 

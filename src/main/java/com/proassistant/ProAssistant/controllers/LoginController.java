@@ -26,7 +26,7 @@ public class LoginController {
 
         if (users != null) {
             session.setAttribute("users", users);
-//            localStorage.setItem('user', JSON.stringify(user)); // Store user in local storage
+//            localStorage.setItem('user', JSON.stringify(user));
             return "redirect:/dashboard";
         }
         else {
