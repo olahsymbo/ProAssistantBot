@@ -3,6 +3,7 @@ name: ProAssistant Build
 on:
   push:
     branches:
+      - master
       - dev
 
 jobs:
